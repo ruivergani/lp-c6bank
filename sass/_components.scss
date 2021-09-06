@@ -1,1 +1,21 @@
 // Card Tarifas
+.card-tarifas{
+    width: 100%;
+    max-width: 25.9rem;
+    position: relative;
+    .images-card{
+        @include flex(column, flex-start, center);
+        .icon{
+            padding-bottom: 10px;
+        }
+    }
+    .text-card{
+        h4{
+            width: 100%;
+            max-width: 24.3rem;
+            padding-bottom: 0.8rem;
+            padding-top: 1.6rem;
+        }
+    }
+}
+
