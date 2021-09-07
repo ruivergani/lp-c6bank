@@ -1,10 +1,9 @@
 .btn-primary{
     background-color: $secondary-brand;
     color: $primary-brand;
-    border: 1px solid $secondary-brand;
     &:hover{
-        background-color: $white;
-        color: $secondary-brand;
+        background-color: $button-bg-darkblue;
+        color: $white;
     }
 }
 .btn-secondary{

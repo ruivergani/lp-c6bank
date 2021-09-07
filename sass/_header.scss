@@ -6,8 +6,8 @@ header{
     left: 0;
     top: 0;
     display: flex;
-    background-color: red;
-    height: 7.2rem;
+    background-color: transparent;
+    height: 7.3rem;
     transition: all .3s;
     &.bg-on{
         background-color: white;
