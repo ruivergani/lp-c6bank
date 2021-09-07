@@ -11,6 +11,17 @@ header{
     transition: all .3s;
     &.bg-on{
         background-color: white;
+        border-bottom: 1px solid rgba(97, 97, 97,0.2);
+        nav{
+            ul{
+                li{
+                    a{
+                        color: rgba(97, 97, 97,0.7);
+                    }
+                }
+            }
+        }
+        
     }
     .container{
         @include flex(row, center, space-between);
