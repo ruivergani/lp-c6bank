@@ -31,3 +31,45 @@
     font-weight: 500;
     transition: all .3s;
 }
+
+// Div of buttons (idea is to be javascript function to change the whole div below)
+.btns{
+    width: 100%;
+    max-width: 59.2rem;
+    border-radius: 12rem;
+    border: 1px solid rgba(36, 36, 36,0.6);
+    padding: 0.8rem 1.1rem;
+    @include flex(row, center, center);
+    gap: 4.8rem;
+    .btn-left, .btn-right{
+        border-radius: 12rem;
+        text-align: center;
+        line-height: 5.6rem;
+        width: 100%;
+        max-width: 26.9rem;
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    .btn-left{
+        background-color: $primary-brand;
+        color: $white;
+        &:hover{
+            background-color: transparent;
+            color: $primary-brand;
+        }
+    }
+    .btn-right{
+        background-color: transparent;
+        color: $primary-brand;
+        &:hover{
+            background-color: $primary-brand;
+            color: $white;
+        }
+    }
+
+}
+
