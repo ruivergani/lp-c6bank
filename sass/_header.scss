@@ -1,0 +1,45 @@
+// Header
+header{
+    width: 100%;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    background-color: red;
+    height: 7.2rem;
+    transition: all .3s;
+    &.bg-on{
+        background-color: white;
+    }
+    .container{
+        @include flex(row, center, space-between);
+    }
+    nav{
+        @include flex(row, center, space-between);
+        gap: 35rem;
+        ul{
+            @include flex(row, center, space-between);
+            gap: 4.6rem;
+            li{
+                a{
+                    font-weight: 500;
+                    line-height: 19px;
+                    color: rgba(255, 255, 255,0.7);
+                    transition: all .3s;
+                    .arrow-down{
+                        margin-left: 1.2rem;
+                    }
+                    &:hover{
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    /* == Mobile Menu == */
+    .btn-mobile, .btn-close{
+        display: none;
+    }
+}
