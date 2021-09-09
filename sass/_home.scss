@@ -4,6 +4,7 @@
     height: 70rem;
     background: url('../img/hero-bg.jpg') no-repeat center center;
     padding-top: 19rem;
+    background-color: #312923;
     .container{
         @include flex(column, flex-start, flex-start);
     }
@@ -77,6 +78,7 @@
 .s-personalite{
     background-color: #FAFAFA;
     padding-top:10.9rem;
+    padding-bottom: 8rem;
     .top{
         display: flex;
         flex-direction: row;
@@ -89,7 +91,6 @@
         background: linear-gradient(98.6deg, #020302 7.61%, #242424 96.26%);
         border-radius: 12px;
         margin-top: 8.7rem;
-        margin-bottom: 8rem;
         height: 42.4rem;
         padding-left: 103px;
         padding-right: 73px;
