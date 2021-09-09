@@ -67,6 +67,7 @@
                 top: -68px;
                 right: 0;
                 z-index: 99;
+                animation: zoominout 9s infinite;
             }
         }
     }
@@ -137,13 +138,14 @@
                 .iphone-mockup{
                     position: absolute;
                     bottom: 0px;
+                    animation: floatingX 6s infinite;
                 }
                 .black-card{
                     position: absolute;
                     top: -79px;
                     right: 233px;
                     z-index: 3;
-
+                    animation: floatingX  9s infinite;
                 }
             }
 
