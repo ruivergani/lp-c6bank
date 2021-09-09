@@ -77,9 +77,6 @@
 .s-personalite{
     background-color: #FAFAFA;
     padding-top:10.9rem;
-    .container{
-
-    }
     .top{
         display: flex;
         flex-direction: row;
@@ -98,7 +95,6 @@
         padding-right: 73px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
         position: relative;
         .text-left{
             width: 100%;
@@ -135,6 +131,26 @@
         }
         .image-right{
             @include flex(row, flex-end, space-between);
+            padding-left:117px;
+            .iphone{
+                .iphone-mockup{
+                    position: absolute;
+                    bottom: 0px;
+                }
+                .black-card{
+                    position: absolute;
+                    top: -79px;
+                    right: 233px;
+                    z-index: 3;
+
+                }
+            }
+
+            .logo-business{
+                position: absolute;
+                right: 73px;
+                bottom: 53px;
+            }
         }
     }
 }
