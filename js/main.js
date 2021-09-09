@@ -3,7 +3,7 @@
 // Script to change background color header and logo
 
 $(window).on("scroll", function() {
-  if($(window).scrollTop() > 80) {
+  if($(window).scrollTop() > 50) {
     $("#main-header").addClass("bg-on");
     $('.container .logo img').attr('src','../img/logo-black.svg');
   } 
