@@ -88,4 +88,44 @@
             margin-top: 2.4rem;
         }
     }
+    .card-bottom{
+        background: linear-gradient(98.6deg, #020302 7.61%, #242424 96.26%);
+        border-radius: 12px;
+        margin-top: 8.7rem;
+        margin-bottom: 8rem;
+        padding: 97px 72px 0px 103px;
+        @include flex(row, center, space-between);
+        .text-left{
+            width: 100%;
+            max-width: 34.1rem;
+            h5{
+                width: 100%;
+                max-width: 21rem;
+                margin-bottom: 1.6rem;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 600;
+                font-size: 2.4rem;
+                line-height: 130%;
+                letter-spacing: -0.03em;
+                color: #FFFFFF;
+            }
+            p{
+                font-size: 16px;
+                line-height: 150%;
+                color: rgba(255, 255, 255,0.7);
+                margin-bottom: 50px;
+            }
+            .icon{
+                @include flex(row, center, flex-start);
+                gap: 1.6rem;
+                p{
+                    margin-bottom: 0px;
+                    font-weight: 500;
+                    font-size: 1.4rem;
+                    line-height: 150%;
+                    color: #FAFAFA;
+                }
+            }
+        }
+    }
 }
