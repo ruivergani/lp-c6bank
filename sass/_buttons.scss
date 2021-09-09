@@ -36,7 +36,7 @@
     width: 100%;
     max-width: 59.2rem;
     border-radius: 12rem;
-    border: 1px solid rgba(36, 36, 36,0.6);
+    border: 1px solid #C4C4C4;
     padding: 0.8rem 1.1rem;
     @include flex(row, center, center);
     gap: 4.8rem;
@@ -52,6 +52,7 @@
         letter-spacing: 0.02em;
         transition: all .3s;
         cursor: pointer;
+
     }
     .btn-left{
         background-color: $primary-brand;
@@ -64,6 +65,13 @@
     .btn-right{
         background-color: transparent;
         color: $primary-brand;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 1.6rem;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: #616161;
         &:hover{
             background-color: $primary-brand;
             color: $white;

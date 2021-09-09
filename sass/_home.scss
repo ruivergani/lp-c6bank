@@ -93,11 +93,17 @@
         border-radius: 12px;
         margin-top: 8.7rem;
         margin-bottom: 8rem;
-        padding: 97px 72px 0px 103px;
-        @include flex(row, center, space-between);
+        height: 42.4rem;
+        padding-left: 103px;
+        padding-right: 73px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: relative;
         .text-left{
             width: 100%;
             max-width: 34.1rem;
+            padding-top: 9.7rem;
             h5{
                 width: 100%;
                 max-width: 21rem;
@@ -126,6 +132,9 @@
                     color: #FAFAFA;
                 }
             }
+        }
+        .image-right{
+            @include flex(row, flex-end, space-between);
         }
     }
 }
