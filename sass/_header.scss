@@ -17,6 +17,9 @@ header{
                 li{
                     a{
                         color: rgba(97, 97, 97,0.7);
+                        &:hover{
+                            color: $primary-brand;
+                        }
                     }
                 }
             }

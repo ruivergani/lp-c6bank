@@ -44,3 +44,26 @@
 }
 
 // Section Cards
+.s-cards{
+    padding-top: 9.6rem;
+    padding-bottom: 8rem;
+    .container{
+        .relative{
+            @include flex(row, center, space-between);
+            .text-cards{
+                padding-top: 10rem;
+                @include flex(row, flex-start, space-between);
+                width: 100%;
+                max-width: 62.5rem;
+                flex-wrap: wrap;
+                gap: 6.8rem;
+            }
+            .img-cards{
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+    
+    
+}
