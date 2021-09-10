@@ -17,7 +17,7 @@ body{
     @include responsive(1300px){ //macbook small size
         font-size: 58%;
     }
-    @include responsive(991px){
+    @include responsive(480px){
         font-size: 62.5%;
     }
 }

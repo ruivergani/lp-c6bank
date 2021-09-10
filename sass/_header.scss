@@ -57,4 +57,33 @@ header{
     .btn-mobile, .btn-close{
         display: none;
     }
+
+    /* == Responsive == */
+    @include responsive(1024px){
+        nav{
+            gap: 19rem;
+        }
+    }
+    @include responsive(768px){
+        nav{
+            gap: 2rem;
+            ul{
+                li{
+                    a{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(480px){
+        nav{
+            gap: 0px;
+        }
+    }
+    @include responsive(325px){
+        nav{
+            justify-content: center;
+        }
+    }
 }

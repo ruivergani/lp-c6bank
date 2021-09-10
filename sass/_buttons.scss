@@ -31,6 +31,20 @@
     transition: all .3s;
 }
 
+@include responsive(480px){
+    .btn-primary{
+        font-weight: 500;
+        line-height: 3.7rem;
+        color: #242424;
+        padding: 0rem 1.4rem;
+    }
+}
+@include responsive(325px){
+    .btn-primary{
+        display: none;
+    }
+}
+
 // Div of buttons (idea is to be javascript function to change the whole div below)
 .btns{
     width: 100%;
