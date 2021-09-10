@@ -70,6 +70,16 @@
             text-align: center;
         }
     }
+    @include responsive(768px){
+        .text{
+            max-width: 100%;
+            @include flex(column, center, center);
+            text-align: center;
+        }
+        .container{
+            @include flex(column, center, center);
+        }
+    }
 }
 
 // Section Cards
