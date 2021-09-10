@@ -70,7 +70,7 @@
             text-align: center;
         }
     }
-    @include responsive(768px){
+    @include responsive(991px){
         .text{
             max-width: 100%;
             @include flex(column, center, center);
@@ -109,8 +109,16 @@
             }
         }
     }
-    
-    
+    /* == Responsive == */
+    @include responsive(991px){
+        .group-content{
+            @include flex( column, center, center);
+            .img-cards{
+                display: none;
+            }
+        }
+    }
+  
 }
 
 // Section Personalite

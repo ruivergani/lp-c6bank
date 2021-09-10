@@ -59,21 +59,10 @@ header{
     }
 
     /* == Responsive == */
+    
     @include responsive(1024px){
         nav{
-            gap: 19rem;
-        }
-    }
-    @include responsive(768px){
-        nav{
-            gap: 2rem;
-            ul{
-                li{
-                    a{
-                        display: none;
-                    }
-                }
-            }
+            gap: 7rem;
         }
     }
     @include responsive(480px){
@@ -84,6 +73,18 @@ header{
     @include responsive(325px){
         nav{
             justify-content: center;
+        }
+    }
+    @include responsive(850px){
+        nav{
+            gap: 2rem;
+            ul{
+                li{
+                    a{
+                        display: none !important;
+                    }
+                }
+            }
         }
     }
 }
