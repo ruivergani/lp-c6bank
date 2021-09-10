@@ -111,14 +111,52 @@
     }
     /* == Responsive == */
     @include responsive(991px){
-        .group-content{
-            @include flex( column, center, center);
-            .img-cards{
-                display: none;
+        .container{
+            .group-content{
+                h2,h3{
+                    text-align: center;
+                }
+                position: initial;
+                @include flex(column, center, center);
+                .img-cards{
+                    display: none;
+                }
+            }
+        }
+        
+    }
+  
+    @include responsive(768px){
+        .container{
+            .group-content{
+                h2{
+                    font-size: 32px;
+                    line-height: 130%;
+                    letter-spacing: -0.03em;
+                }
+                h3{
+                    font-size: 24px;
+                    line-height: 130%;
+                }
+                .text-cards{
+                    max-width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
             }
         }
     }
-  
+    @include responsive(480px){
+        .container{
+            .group-content{
+                .text-cards{
+                    gap: 6.4rem;
+                    padding-top: 6.4rem;
+                }
+            }
+        }
+    }
 }
 
 // Section Personalite

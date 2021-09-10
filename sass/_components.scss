@@ -19,3 +19,12 @@
     }
 }
 
+@include responsive(991px){
+        .card-tarifas{
+            max-width: 25.9rem;
+            text-align: center;
+            .images-card{
+                @include flex(column, center, center);
+            }
+        }
+}
