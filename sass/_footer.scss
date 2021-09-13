@@ -39,7 +39,6 @@ footer{
                 ul{
                     li{
                         margin-bottom: 3.2rem;
-                        
                         a{
                             line-height: 105%;
                             transition: all 0.2s;
@@ -80,6 +79,48 @@ footer{
                 margin-right: 0.8rem;
                 color: white;
             }
+        }
+    }
+    /* == Responsive == */
+    @include responsive(1100px){
+        main{
+            nav{
+                padding: 0px 20px;
+                max-width: 58rem;
+            }
+        }
+    }
+    @include responsive(650px){
+        main{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            .area-left{
+                text-align: center;
+                padding-bottom: 7rem;
+            }
+            nav{
+                max-width: 100%;
+                gap: 6rem;
+                @include flex(column, center, center);
+                .item{
+                    text-align: left;
+                    ul{
+                        li{
+                            a{
+                                &:last-child{
+                                    display: flex;
+                                    align-items: flex-start;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copy{
+            text-align: center;
         }
     }
 }
