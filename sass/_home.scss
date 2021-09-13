@@ -125,7 +125,6 @@
         }
         
     }
-  
     @include responsive(768px){
         .container{
             .group-content{
@@ -240,4 +239,76 @@
             }
         }
     }
+
+    /* == Responsive == */
+    @include responsive(991px){
+        .top{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .card-bottom{
+            .image-right{
+                padding-left: 20px;
+                .logo-business{
+                    display: none;
+                }
+                .iphone{
+                    .iphone-mockup{
+                        width: 100%;
+                        max-width: 45rem;
+                    }
+                    .black-card{
+                        width: 100%;
+                        max-width: 38rem;
+                        right: 5.6rem;
+                        top: -60px;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive(768px){
+        .card-bottom{
+            margin-top: 8.7rem;
+            height: 70rem;
+            padding-left: 0px;
+            padding-right: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 30rem;
+            position: relative;
+            @include flex(column, center, center);
+            .text-left{
+                padding-top: 0;
+                max-width: 307px;
+                text-align: center;
+                @include flex(column, center, center);
+                p{
+                    margin-bottom: 30px;
+                }
+            }
+            .image-right{
+                padding-left: 0px;
+                @include flex(column, center, center);
+                margin: 0 auto;
+                padding-right: 200px;
+                .iphone{
+                    .iphone-mockup{
+                        position: absolute;
+                        bottom: 0px;
+                        right: 150px;
+                    }
+                    .black-card{
+                        position: absolute;
+                        top: 300px;
+                        right: 250px;
+                        z-index: 3;
+                    }
+                }
+            }
+        }
+    }
+    @include responsive()
 }
