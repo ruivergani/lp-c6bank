@@ -1,6 +1,6 @@
 # Redesign of C6 Bank Landing Page. 
 
-Link: https://lp-c6bank.netlify.app/
+Link: https://ruivergani.github.io/lp-c6bank/
 
 Website developed during the CodeBoost course. Assisted by William Moreira I have developed this landing page for the bank C6.
 
