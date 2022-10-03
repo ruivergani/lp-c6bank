@@ -13,3 +13,5 @@ Responsive to all devices and screens size
 
 Design created on Figma
 Date created: 2021
+
+![Screenshot 2022-10-03 at 15 40 58](https://user-images.githubusercontent.com/70537459/193605554-61eb7cab-f783-4e51-b9ef-1c82192ba724.png)
